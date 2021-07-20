@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="title">SET ALARM ⏰ </h3>
+            <div>
+                <!-- Display real time -->
+                <h2 id="realtime">00:00:00</h2>
+
+                <!-- Select Alarm time to be set -->
+                <div class="alarmtimebody">
+                    <label>
+                        <div>
+                            <select class="time" id="hr"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="min"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="sec"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="ampm"></select>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add Alarm to a list-->
+            <button id="setButton">Set Alarm</button>
+
+            <!-- Click the button to remove alarm sound -->
+            <button id="setClear">Clear Alarm</button>
+
+            <div>
+                <h3 class="allalarms">All Alarms</h3>
+                <hr>
+                <!-- List of all alarms created by the user -->
+                <ul id="incomplete-alarms">
+
+                </ul>
+            </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</body>
+
+</html>
